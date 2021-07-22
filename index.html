@@ -9,20 +9,30 @@
 
         #alex {
           font-family: helvetica;
+         
         }
-
+        /* ajuda do amigo Leandro para centralizar as bolinhas do UL junto com o resto  */
         body {
           font-family: sans-serif;       
           background-color: #FFE1A8;   
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
+        .imagem_perfil {
+          border-radius: 50%;          
+        }
+        .listaul {
+          line-height: 21px;
+        }
     </style>
 </head>
 <body>
-    
-    <img src="/images/WhatsApp Image 2021-06-30 at 12.27.19.jpeg" width="300" alt="Foto de alexandro cubas">
+      <br>  
+    <img src="/images/WhatsApp Image 2021-06-30 at 12.27.19.jpeg" width="350" alt="Foto de alexandro cubas" class="imagem_perfil">
 
-    <ul> <em>
+    <ul class="botão_listas"> <em>
       <li> <a href="#alex">nome</a> </li>
       <li> <a href="#sobre"> sobre</a></li>
       <li> <a href="#habilidade"> Habilidades</a></li>
@@ -32,20 +42,22 @@
 
     <h1 id="alex">Nome : Alexsandro Cubas</h1>
     <h2 id="sobre">Sobre:</h2>
-    <p> <strong> Meu nome é Alexsandro Cubas, moro em Curitiba Paraná, tenho 23 anos e estudo na Trybe. </strong></p>
+    <p>  Meu nome é Alexsandro Cubas, moro em <strong>Curitiba Paraná</strong>, tenho <strong> 23 anos </strong> e estudo na Trybe.</p>
 
     <h2 id="habilidade">Habilidades</h2>
 
-    <ul>
+    <ul class="listaul">
         <li> <strong><em> Boa determinação</em></strong></li>
         <li> <em>Trabalho em equipe</em></li>
-        <li>Inglês iniciante</li>
+        <li>Inglês</li>
 
-    </ul>
+    </ul class="listaul">
+    
+        <br>
 
     <a href="#alex" >Alexsandro Cubas</a>
 
-        <br><br>
+        <br>
 
     <a id="links" href="https://www.twitch.tv/alanzoka" target="_blank">Lives do alanzoka</a>
 </body>
